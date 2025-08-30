@@ -12,32 +12,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "SWPD_libTsAf_3K1_TELE",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/SWPD_libTsAf_3K1_TELE.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libm",
-                "libc",
-                "libc++",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "samsung",
     strip: {
@@ -3056,7 +3030,7 @@ cc_prebuilt_library_shared {
                 "libhypervintf",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libtriplecam_video_optical_zoom",
+                "libdualcam_video_optical_zoom",
                 "libmpbase",
                 "libOpenCL",
                 "libuniplugin",
@@ -3254,6 +3228,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libtswrappercommon",
                 "libsnap_vndk",
+                "com.qti.chi.override",
                 "libc++",
                 "libc",
                 "libm",
@@ -3283,6 +3258,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libtswrappercommon",
+                "libPdSdCore",
                 "libion",
                 "libc++",
                 "libc",
@@ -3298,7 +3274,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTsAeFront_dm3",
+    name: "libTsAeFront_b5",
     owner: "samsung",
     strip: {
         none: true,
@@ -3306,7 +3282,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/components/libTsAeFront_dm3.so",
+                "proprietary/vendor/lib64/camera/components/libTsAeFront_b5.so",
             ],
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
@@ -3325,7 +3301,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTsAe_dm2",
+    name: "libTsAe_b5",
     owner: "samsung",
     strip: {
         none: true,
@@ -3333,7 +3309,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/components/libTsAe_dm2.so",
+                "proprietary/vendor/lib64/camera/components/libTsAe_b5.so",
             ],
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
@@ -5444,7 +5420,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTsAf_DM123Q",
+    name: "libTsAf_Q5B5Q",
     owner: "samsung",
     strip: {
         none: true,
@@ -5452,7 +5428,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libTsAf_DM123Q.so",
+                "proprietary/vendor/lib64/libTsAf_Q5B5Q.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -5470,7 +5446,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTsAwbFront_DM2",
+    name: "libTsAwbFront_B5",
     owner: "samsung",
     strip: {
         none: true,
@@ -5478,7 +5454,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libTsAwbFront_DM2.so",
+                "proprietary/vendor/lib64/libTsAwbFront_B5.so",
             ],
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
@@ -5496,7 +5472,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTsAwb_DM2",
+    name: "libTsAwb_B5",
     owner: "samsung",
     strip: {
         none: true,
@@ -5504,7 +5480,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libTsAwb_DM2.so",
+                "proprietary/vendor/lib64/libTsAwb_B5.so",
             ],
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
@@ -6018,7 +5994,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "com.qti.chi.override",
-                "libtriplecam_optical_zoom_control",
+                "libdualcam_optical_zoom_control",
                 "libc++",
                 "libc",
                 "libm",
@@ -6041,56 +6017,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtriplecam_optical_zoom_control",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtriplecam_video_optical_zoom",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -6257,7 +6183,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libaudioutils",
-                "lib_SoundAlive_play_plus_ver800",
+                "lib_SoundAlive_play_plus_ver500",
                 "lib_SoundAlive_AlbumArt_ver105",
                 "libc++",
                 "libc",
@@ -6621,6 +6547,8 @@ cc_prebuilt_binary {
                 "libqmi_encdec",
                 "libqmi_csi",
                 "libnanopb",
+                "libcdsprpc",
+                "libsns_device_mode_stub",
                 "libc++",
                 "libc",
                 "libm",

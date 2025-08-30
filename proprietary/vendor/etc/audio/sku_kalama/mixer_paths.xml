@@ -62,45 +62,14 @@
 
 <mixer>
     <!-- These are the initial mixer settings -->
-    <!-- CS35L43 controls -->
-    <ctl name="Left DSP1 Firmware" value="Protection" />
-    <ctl name="Left DSP1 Preload Switch" value="1" />
-    <ctl name="Left Amp Gain" value="1" />
-    <ctl name="Left Digital PCM Volume" value="0" />
-    <ctl name="Left AMP Enable Switch" value="0" />
-    <ctl name="Left DSP RX2 Source" value="ASPRX1" />
-    <ctl name="Left AMP Mute" value="Unmuted" />
-    <ctl name="Left Boost Enable" value="Disabled" />
-    <ctl name="Right DSP1 Firmware" value="Protection" />
-    <ctl name="Right DSP1 Preload Switch" value="1" />
-    <ctl name="Right Amp Gain" value="1" />
-    <ctl name="Right Digital PCM Volume" value="0" />
-    <ctl name="Right AMP Enable Switch" value="0" />
-    <ctl name="Right DSP RX2 Source" value="ASPRX1" />
-    <ctl name="Right AMP Mute" value="Unmuted" />
-    <ctl name="Right Boost Enable" value="Disabled" />
-    <ctl name="Left ASPTX1 Slot Position" value="0" />
-    <ctl name="Right ASPTX1 Slot Position" value="1" />
-    <ctl name="Left ASPTX2 Slot Position" value="2" />
-    <ctl name="Right ASPTX2 Slot Position" value="3" />
-    <ctl name="Left ASPTX3 Slot Position" value="7" />
-    <ctl name="Right ASPTX3 Slot Position" value="7" />
-    <ctl name="Left ASPTX4 Slot Position" value="7" />
-    <ctl name="Right ASPTX4 Slot Position" value="7" />
-    <ctl name="Left ASP TX1 Source" value="DSP" />
-    <ctl name="Right ASP TX1 Source" value="DSP" />
-    <ctl name="Left ASP TX2 Source" value="ASPRX1" />
-    <ctl name="Right ASP TX2 Source" value="ASPRX1" />
-    <ctl name="Left ASP TX3 Source" value="Zero" />
-    <ctl name="Right ASP TX3 Source" value="Zero" />
-    <ctl name="Left ASP TX4 Source" value="Zero" />
-    <ctl name="Right ASP TX4 Source" value="Zero" />
-    <ctl name="Left PCM Soft Ramp" value=".5ms" />
-    <ctl name="Right PCM Soft Ramp" value=".5ms" />
-    <ctl name="Left ASPRX1 Slot Position" value="0" />
-    <ctl name="Left ASPRX2 Slot Position" value="1" />
-    <ctl name="Right ASPRX1 Slot Position" value="1" />
-    <ctl name="Right ASPRX2 Slot Position" value="0" />
+    <!-- TFA9878 controls -->
+    <ctl name="SPK Active" id="0" value="0" />
+    <ctl name="SPK Active" id="1" value="0" />
+    <ctl name="SPK Mute" id="0" value="0" />
+    <ctl name="SPK Mute" id="1" value="0" />
+    <ctl name="SPK Profile" value="default" />
+    <ctl name="SPK Gain" id="0" value="4" />
+    <ctl name="SPK Gain" id="1" value="4" />
 
     <!-- CS40L26 controls -->
     <ctl name="Haptics Source" value="Off" />
@@ -235,12 +204,12 @@
     </path>
 
     <path name="upper-spk-amp-mute">
-        <ctl name="Left AMP Mute" value="Muted" />
+        <ctl name="SPK Mute" id="0" value="1" />
     </path>
 
     <path name="amp-mute">
-        <ctl name="Left AMP Mute" value="Muted" />
-        <ctl name="Right AMP Mute" value="Muted" />
+        <ctl name="SPK Mute" id="0" value="1" />
+        <ctl name="SPK Mute" id="1" value="1" />
     </path>
 
     <path name="lpi-pcm-logging">
@@ -266,41 +235,24 @@
     <!-- Device -->
     <!-- RX part -->
     <path name="rcv">
-        <ctl name="Left ASP TX1 Source" value="ASPRX1" />
-        <ctl name="Right ASP TX1 Source" value="ASPRX1" />
-        <ctl name="Left ASP TX2 Source" value="VMON" />
-        <ctl name="Right ASP TX2 Source" value="VMON" />
-        <ctl name="Left PCM Source" value="ASPRX1" />
-        <ctl name="Left Boost Enable" value="Enabled" />
-        <ctl name="Left AMP Enable Switch" value="1" />
+        <ctl name="SPK Active" id="0" value="1" />
+        <ctl name="SPK Active" id="1" value="0" />
+        <ctl name="SPK Profile" value="call_rcv" />
     </path>
 
     <path name="spk-mono-left">
-        <ctl name="Left ASP TX1 Source" value="ASPRX1" />
-        <ctl name="Right ASP TX1 Source" value="ASPRX1" />
-        <ctl name="Left ASP TX2 Source" value="VMON" />
-        <ctl name="Right ASP TX2 Source" value="VMON" />
-        <ctl name="Left PCM Source" value="ASPRX1" />
-        <ctl name="Left Boost Enable" value="Disabled" />
-        <ctl name="Left AMP Enable Switch" value="1" />
+        <ctl name="SPK Active" id="0" value="1" />
+        <ctl name="SPK Active" id="1" value="0" />
     </path>
 
     <path name="spk-mono-right">
-        <ctl name="Right PCM Source" value="DSP" />
-        <ctl name="Right Boost Enable" value="Enabled" />
-        <ctl name="Right DSP RX2 Source" value="ASPRX1" />
-        <ctl name="Right AMP Enable Switch" value="1" />
+        <ctl name="SPK Active" id="0" value="0" />
+        <ctl name="SPK Active" id="1" value="1" />
     </path>
 
     <path name="spk">
-        <ctl name="Left PCM Source" value="DSP" />
-        <ctl name="Left Boost Enable" value="Enabled" />
-        <ctl name="Left DSP RX2 Source" value="ASPRX1" />
-        <ctl name="Left AMP Enable Switch" value="1" />
-        <ctl name="Right PCM Source" value="DSP" />
-        <ctl name="Right Boost Enable" value="Enabled" />
-        <ctl name="Right DSP RX2 Source" value="ASPRX1" />
-        <ctl name="Right AMP Enable Switch" value="1" />
+        <ctl name="SPK Active" id="0" value="1" />
+        <ctl name="SPK Active" id="1" value="1" />
     </path>
 
     <path name="ear">
@@ -321,13 +273,9 @@
     </path>
 
     <path name="3rd-mic">
-        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
-        <ctl name="TX DMIC MUX2" value="DMIC5" />
     </path>
 
     <path name="4th-mic">
-        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
-        <ctl name="TX DMIC MUX3" value="DMIC7" />
     </path>
 
     <path name="ear-mic">
@@ -361,14 +309,6 @@
     <!-- to verify external amp tx line at the factory test -->
     <!-- for dual speaker project                           -->
     <path name="swap-feedback">
-        <ctl name="Left ASPTX1 Slot Position" value="1" />
-        <ctl name="Right ASPTX1 Slot Position" value="0" />
-        <ctl name="Left ASPTX2 Slot Position" value="3" />
-        <ctl name="Right ASPTX2 Slot Position" value="2" />
-        <ctl name="Left ASP TX1 Source" value="ASPRX1" />
-        <ctl name="Right ASP TX1 Source" value="ASPRX1" />
-        <ctl name="Left ASP TX2 Source" value="VMON" />
-        <ctl name="Right ASP TX2 Source" value="VMON" />
     </path>
     <!-- end of Device -->
 
@@ -382,28 +322,19 @@
 
     <path name="handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="2" />
-        <ctl name="Left Digital PCM Volume" value="761" />
+        <ctl name="SPK Profile" value="handset" />
     </path>
 
     <path name="speaker-mono-left">
         <path name="spk-mono-left" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="speaker-mono-right">
         <path name="spk-mono-right" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="headphones">
@@ -450,18 +381,10 @@
 
     <path name="speaker-and-bt-sco">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="speaker-and-bt-sco-wb">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="speaker-and-headphones-bt-sco">
@@ -497,10 +420,6 @@
 
     <path name="fm-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="fm-headset">
@@ -517,10 +436,8 @@
 
     <path name="karaoke-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="693" />
-        <ctl name="Right Digital PCM Volume" value="801" />
+        <ctl name="SPK Gain" id="0" value="6" />
+        <ctl name="SPK Gain" id="1" value="6" />
     </path>
 
     <path name="listenback-headphones">
@@ -593,7 +510,6 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="unprocessed-quad-mic">
@@ -609,28 +525,24 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="unprocessed-hdr-mic-inverted-landscape">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="unprocessed-hdr-mic-portrait">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="unprocessed-hdr-mic-inverted-portrait">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="rec-main-mic">
@@ -658,8 +570,8 @@
 
     <path name="rec-interview-mic">
         <path name="sub-main-mic" />
-        <ctl name="TX_DEC0 Volume" value="97" />
-        <ctl name="TX_DEC1 Volume" value="97" />
+        <ctl name="TX_DEC0 Volume" value="104" />
+        <ctl name="TX_DEC1 Volume" value="104" />
     </path>
 
     <path name="camcorder-main-mic">
@@ -673,17 +585,15 @@
     </path>
 
     <path name="camcorder-multi-mic">
-        <path name="multi-mic" />
+        <path name="sub-main-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="camcorder-multi-and-bt-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="TX_DEC2 Volume" value="84" />
     </path>
 
     <path name="echo-main-mic">
@@ -705,7 +615,6 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="107" />
         <ctl name="TX_DEC1 Volume" value="112" />
-        <ctl name="TX_DEC2 Volume" value="114" />
     </path>
     <!-- end of Recording Scenario -->
 
@@ -802,8 +711,8 @@
 
     <path name="bargein-tts-speaker-mic">
         <path name="sub-main-mic" />
-        <ctl name="TX_DEC0 Volume" value="110" />
-        <ctl name="TX_DEC1 Volume" value="100" />
+        <ctl name="TX_DEC0 Volume" value="96" />
+        <ctl name="TX_DEC1 Volume" value="96" />
     </path>
 
     <path name="bargein-tts-headphones-mic">
@@ -821,8 +730,8 @@
 
     <path name="bargein-aec-speaker-mic">
         <path name="sub-main-mic" />
-        <ctl name="TX_DEC0 Volume" value="100" />
-        <ctl name="TX_DEC1 Volume" value="101" />
+        <ctl name="TX_DEC0 Volume" value="98" />
+        <ctl name="TX_DEC1 Volume" value="107" />
     </path>
 
     <path name="bargein-aec-headphones-mic">
@@ -842,33 +751,29 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="100" />
         <ctl name="TX_DEC1 Volume" value="100" />
-        <ctl name="TX_DEC2 Volume" value="100" />
     </path>
 
     <path name="interpreter-listen-usb-headset-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="100" />
         <ctl name="TX_DEC1 Volume" value="100" />
-        <ctl name="TX_DEC2 Volume" value="100" />
     </path>
 
     <path name="interpreter-listen-bt-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="100" />
         <ctl name="TX_DEC1 Volume" value="100" />
-        <ctl name="TX_DEC2 Volume" value="100" />
     </path>
 
     <path name="interpreter-conv-speaker-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="100" />
         <ctl name="TX_DEC1 Volume" value="100" />
-        <ctl name="TX_DEC2 Volume" value="100" />
     </path>
 
     <path name="interpreter-conv-usb-headset-mic">
     </path>
-
+ 
     <path name="headset-aas-mic">
         <path name="sub-mic" />
         <ctl name="TX_DEC1 Volume" value="109" />
@@ -886,7 +791,7 @@
 
     <path name="karaoke-sub-mic"> 
         <path name="sub-mic" /> 
-        <ctl name="TX_DEC1 Volume" value="100" /> 
+        <ctl name="TX_DEC1 Volume" value="103" /> 
     </path>
 
     <path name="listenback-main-mic">
@@ -905,36 +810,30 @@
     <!-- RX part -->
     <path name="call-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="0" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="call-handset-hac">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="5" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="call-handset-hac-tcoil">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="3" />
-        <ctl name="Left Digital PCM Volume" value="817" />
+    </path>
+
+    <path name="call-handset-flip">
+        <path name="call-handset" />
     </path>
 
     <path name="call-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="call-dex-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
+    </path>
+
+    <path name="call-speaker-flip">
+        <path name="call-speaker" />
     </path>
 
     <path name="call-headset">
@@ -947,23 +846,32 @@
     <!-- TX part -->
     <path name="hearing-aid-mic">
         <path name="multi-mic" />
-        <ctl name="TX_DEC0 Volume" value="96" />
-        <ctl name="TX_DEC1 Volume" value="96" />
-        <ctl name="TX_DEC2 Volume" value="96" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
     
     <path name="call-handset-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="94" />
         <ctl name="TX_DEC1 Volume" value="94" />
-        <ctl name="TX_DEC2 Volume" value="94" />
+    </path>
+
+    <path name="call-handset-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="call-speaker-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="90" />
         <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
+    </path>
+
+    <path name="call-speaker-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
     </path>
 
     <path name="call-headphone-mic">
@@ -982,7 +890,7 @@
 
     <path name="call-dex-speaker-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC1 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="call-usb-headset-mic">
@@ -993,10 +901,6 @@
     <!-- RX part -->
     <path name="video-call-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <!-- TX part -->
@@ -1004,7 +908,18 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="90" />
         <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
+    </path>
+
+    <path name="video-call-speaker-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
+    </path>
+
+    <path name="video-call-speaker-mic-flex">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
     </path>
     <!-- end of video call Scenario  -->
 
@@ -1012,36 +927,22 @@
     <!-- RX part -->
     <path name="wifi-call-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="0" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="wifi-call-handset-hac">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="5" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="wifi-call-handset-hac-tcoil">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="5" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="wifi-call-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="wifi-call-dex-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="wifi-call-headset">
@@ -1056,19 +957,29 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="94" />
         <ctl name="TX_DEC1 Volume" value="94" />
-        <ctl name="TX_DEC2 Volume" value="94" />
+    </path>
+
+    <path name="wifi-call-handset-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="wifi-call-speaker-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="90" />
         <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
+    </path>
+
+    <path name="wifi-call-speaker-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
     </path>
 
     <path name="wifi-call-dex-speaker-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC1 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="wifi-call-headphone-mic">
@@ -1092,10 +1003,6 @@
     <!-- call forward Scenario -->
     <path name="voice-call-forward">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="0" />
-        <ctl name="Left Digital PCM Volume" value="0" />
-        <ctl name="Right Amp Gain" value="0" />
-        <ctl name="Right Digital PCM Volume" value="0" />
     </path>
 
     <path name="voice-call-forward-mic">
@@ -1118,8 +1025,6 @@
     <!-- RX part -->
     <path name="call-tty-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="3" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="call-tty-headset">
@@ -1154,8 +1059,6 @@
     <!-- RX part -->
     <path name="wifi-call-tty-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="3" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="wifi-call-tty-headset">
@@ -1190,36 +1093,22 @@
     <!-- RX part -->
     <path name="voip-comm-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="3" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="voip-comm-handset-hac">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="5" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="voip-comm-handset-hac-tcoil">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="5" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="voip-comm-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="voip-comm-dex-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="voip-comm-headset">
@@ -1231,18 +1120,10 @@
 
     <path name="voip-comm-tv-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="voip-gaming-speaker">
         <path name="spk" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <!-- TX part -->
@@ -1250,19 +1131,35 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="94" />
         <ctl name="TX_DEC1 Volume" value="94" />
-        <ctl name="TX_DEC2 Volume" value="94" />
+    </path>
+
+    <path name="voip-comm-handset-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="voip-comm-speaker-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="90" />
         <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
+    </path>
+
+    <path name="voip-comm-speaker-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
+    </path>
+
+    <path name="voip-comm-speaker-mic-flex">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
     </path>
 
     <path name="voip-comm-dex-speaker-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC1 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="voip-comm-headphone-mic">
@@ -1286,21 +1183,24 @@
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="90" />
         <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
-    </path>
-
-    <path name="voip-smonitor-speaker-mic">
-        <path name="multi-mic" />
-        <ctl name="TX_DEC0 Volume" value="90" />
-        <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
     </path>
 
     <path name="voip-gaming-speaker-mic">
         <path name="multi-mic" />
         <ctl name="TX_DEC0 Volume" value="90" />
         <ctl name="TX_DEC1 Volume" value="90" />
-        <ctl name="TX_DEC2 Volume" value="90" />
+    </path>
+
+    <path name="voip-gaming-speaker-mic-flip">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
+    </path>
+
+    <path name="voip-smonitor-speaker-mic">
+        <path name="multi-mic" />
+        <ctl name="TX_DEC0 Volume" value="90" />
+        <ctl name="TX_DEC1 Volume" value="90" />
     </path>
     <!-- end of VoIP Scenario -->
 
@@ -1308,27 +1208,18 @@
     <!-- RX part -->
     <path name="loopback-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="5" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="loopback-handset-dual-mic">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="13" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="loopback-speaker-left">
         <path name="spk-mono-left" />
-        <ctl name="Left Amp Gain" value="18" />
-        <ctl name="Left Digital PCM Volume" value="817" />
     </path>
 
     <path name="loopback-speaker-right">
         <path name="spk-mono-right" />
-        <path name="swap-feedback" />
-        <ctl name="Right Amp Gain" value="18" />
-        <ctl name="Right Digital PCM Volume" value="817" />
     </path>
 
     <path name="loopback-headset">
@@ -1344,31 +1235,31 @@
 
     <path name="loopback-incallmusic-handset">
         <path name="rcv" />
-        <ctl name="Left Amp Gain" value="13" />
-        <ctl name="Left Digital PCM Volume" value="761" />
     </path>
 
     <path name="loopback-incallmusic-speaker">
         <path name="spk-mono-right" />
-        <ctl name="Right AMP Gain" value="18" />
-        <ctl name="Right Digital PCM Volume" value="817" />
+    </path>
+
+    <path name="loopback-incallmusic-speaker-all">
+        <path name="spk" />
     </path>
 
     <!-- TX part -->
     <path name="loopback-main-mic">
         <path name="main-mic" />
-        <ctl name="TX_DEC0 Volume" value="105" />
+        <ctl name="TX_DEC0 Volume" value="94" />
     </path>
 
     <path name="loopback-dual-mic">
         <path name="main-sub-mic" />
-        <ctl name="TX_DEC0 Volume" value="105" />
-        <ctl name="TX_DEC1 Volume" value="105" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="TX_DEC1 Volume" value="94" />
     </path>
 
     <path name="loopback-sub-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC1 Volume" value="80" />
+        <ctl name="TX_DEC1 Volume" value="85" />
     </path>
 
     <path name="loopback-3rd-mic">

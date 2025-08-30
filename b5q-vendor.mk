@@ -19,8 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/acdb_cal.acdb \
     vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFileXml.qwsp \
     vendor/samsung/b5q/proprietary/vendor/etc/audio/sku_kalama/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths.xml \
-    vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json \
     vendor/samsung/b5q/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/b5q/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/samsung/b5q/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
@@ -28,33 +28,35 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/etc/init/vendor.samsung.rilchip.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.qcom.rc \
     vendor/samsung/b5q/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/b5q/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_ak991x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_1.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
     vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_ak991x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_2.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_ak991x_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_3.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_ak991x_8.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_8.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_ak991x_9.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_9.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_default_sensors.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_dynamic_sensors_template.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_iot_hdk_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_iot_hdk_dae.json \
     vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_irq.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lps22hh_0.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lsm6dso_0_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dso_0_0.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lsm6dso_0_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dso_0_1.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lidangle_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lidangle_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lps22df_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lps22df_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lsm6dsv_0_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dsv_0_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_lsm6dsv_1_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dsv_1_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_power_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_qsh_ble_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_stk33917_sub_flip_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_stk33917_sub_flip_0.json \
     vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/kailua_stk3a9x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_stk3a9x_0.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsv_0.json \
+    vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsv_1.json \
     vendor/samsung/b5q/proprietary/vendor/etc/situation_audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/situation_audio_policy_volumes_sec.xml \
+    vendor/samsung/b5q/proprietary/vendor/firmware/B5_S6E3FAC_AMF670BS03.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/B5_S6E3FAC_AMF670BS03.dat \
+    vendor/samsung/b5q/proprietary/vendor/firmware/B5_S6E3FC5_AMB338EH01.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/B5_S6E3FC5_AMB338EH01.dat \
     vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
     vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
     vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
-    vendor/samsung/b5q/proprietary/vendor/firmware/DM1_LX83118_CM002.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/DM1_LX83118_CM002.dat \
-    vendor/samsung/b5q/proprietary/vendor/firmware/DM1_S6E3FAC_AMB606AW01.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/DM1_S6E3FAC_AMB606AW01.dat \
     vendor/samsung/b5q/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
-    vendor/samsung/b5q/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b02 \
     vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mbn \
     vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mdt \
     vendor/samsung/b5q/proprietary/vendor/firmware/bt_nvm_loading.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading.xml \
     vendor/samsung/b5q/proprietary/vendor/firmware/bt_nvm_loading_2nd.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading_2nd.xml \
-    vendor/samsung/b5q/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.bin \
-    vendor/samsung/b5q/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.wmfw \
-    vendor/samsung/b5q/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.bin \
-    vendor/samsung/b5q/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw \
     vendor/samsung/b5q/proprietary/vendor/firmware/cs40l26-a2h.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-a2h.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/cs40l26-calib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/cs40l26-calib.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.wmfw \
@@ -85,7 +87,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/firmware/hpnv21g.bb7:$(TARGET_COPY_OUT_VENDOR)/firmware/hpnv21g.bb7 \
     vendor/samsung/b5q/proprietary/vendor/firmware/hpnv21g.bb9:$(TARGET_COPY_OUT_VENDOR)/firmware/hpnv21g.bb9 \
     vendor/samsung/b5q/proprietary/vendor/firmware/hpnv21g.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hpnv21g.bin \
-    vendor/samsung/b5q/proprietary/vendor/firmware/mfc/mfc_fw_flash.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/mfc/mfc_fw_flash_cps4038.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash_cps4038.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_mcu_stm32g_fw.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/amss20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/amss20.bin \
@@ -99,24 +100,27 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/bdwlang.elf2:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/bdwlang.elf2 \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/m3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/m3.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/regdb.bin \
-    vendor/samsung/b5q/proprietary/vendor/firmware/tsp_stm/fts2ba61y_b5q.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_stm/fts2ba61y_b5q.bin \
-    vendor/samsung/b5q/proprietary/vendor/firmware/tsp_stm/fts2ba61y_b5q_boe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_stm/fts2ba61y_b5q_boe.bin \
+    vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3908_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_b5.bin \
+    vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3908_b5_old.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_b5_old.bin \
+    vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3916a_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3916a_b5.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgn3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgn3.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_lsi_s5k3k1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_lsi_s5k3k1.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3k1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3k1.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgn3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgn3.bin \
-    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx564.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_rev01_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_rev01_s5k2ld.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_rev02_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_rev02_s5k2ld.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_rev03_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_rev03_s5k2ld.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5k2ld.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_lsi_rev01_s5k3j1_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_lsi_rev01_s5k3j1_full.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3j1_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3j1_full.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_rev01_s5k3j1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_rev01_s5k3j1.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3j1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3j1.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_sony_imx258.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_sony_imx258.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k2ld.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3j1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3j1.bin \
+    vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx258.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx258.bin \
     vendor/samsung/b5q/proprietary/vendor/lib64/camera/t_t10_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/t_t10_dual_calibration.bin \
     vendor/samsung/b5q/proprietary/vendor/lib64/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/uw_dual_calibration.bin \
     vendor/samsung/b5q/proprietary/vendor/lib64/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_dual_calibration.bin
 
 PRODUCT_PACKAGES += \
-    SWPD_libTsAf_3K1_TELE \
     btaudio_offload_if \
     com.samsung.ois.mcu_stm32g \
     com.samsung.sensor.hi1337 \
@@ -202,8 +206,8 @@ PRODUCT_PACKAGES += \
     com.ss.stats.af \
     com.ss.stats.awb \
     com.ss.stats.pdlib \
-    libTsAeFront_dm3 \
-    libTsAe_dm2 \
+    libTsAeFront_b5 \
+    libTsAe_b5 \
     libdepthmapwrapper_secure \
     com.qti.camx.chiiqutils \
     com.qti.chiusecaseselector \
@@ -250,9 +254,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.bttpi-impl \
-    libTsAf_DM123Q \
-    libTsAwbFront_DM2 \
-    libTsAwb_DM2 \
+    libTsAf_Q5B5Q \
+    libTsAwbFront_B5 \
+    libTsAwb_B5 \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -269,8 +273,6 @@ PRODUCT_PACKAGES += \
     libsoc_helper \
     libthirdparty_zoomtranslator_imp \
     libtriplecam_image_optical_zoom \
-    libtriplecam_optical_zoom_control \
-    libtriplecam_video_optical_zoom \
     libvdis.uniplugin@1.0 \
     sensors.flicker \
     sensors.grip \
