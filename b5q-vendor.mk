@@ -308,6 +308,8 @@ PRODUCT_PACKAGES += \
     libTsAf_Q5B5Q \
     libTsAwbFront_B5 \
     libTsAwb_B5 \
+    lib_SamsungRec_07020 \
+    lib_SoundAlive_play_plus_ver500 \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
