@@ -140,10 +140,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/bdwlang.elf2:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/bdwlang.elf2 \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/m3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/m3.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/regdb.bin \
+    vendor/samsung/b5q/proprietary/vendor/firmware/ss_dsi_panel_PBA_BOOTING_FHD_DSI1.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/ss_dsi_panel_PBA_BOOTING_FHD_DSI1.dat \
     vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3908_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_b5.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3908_b5_old.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_b5_old.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3916a_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3916a_b5.bin \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
     vendor/samsung/b5q/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu30_4v_16mb.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_16mb.mbn \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu30_4v_16mb_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_16mb_unsigned.mbn \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu30_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_unsigned.mbn \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
+    vendor/samsung/b5q/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
     vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_rev01_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_rev01_s5k2ld.bin \
     vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_rev02_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_rev02_s5k2ld.bin \
     vendor/samsung/b5q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_rev03_s5k2ld.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_rev03_s5k2ld.bin \
