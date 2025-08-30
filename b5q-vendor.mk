@@ -48,11 +48,34 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/etc/situation_audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/situation_audio_policy_volumes_sec.xml \
     vendor/samsung/b5q/proprietary/vendor/firmware/B5_S6E3FAC_AMF670BS03.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/B5_S6E3FAC_AMF670BS03.dat \
     vendor/samsung/b5q/proprietary/vendor/firmware/B5_S6E3FC5_AMB338EH01.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/B5_S6E3FC5_AMB338EH01.dat \
-    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
-    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
-    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b03 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b04 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b05 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b06 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b07 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b08 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b09 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b10 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b11 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b12 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b13 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b14 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b15 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b16 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b17 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b18 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b19 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
     vendor/samsung/b5q/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
+    vendor/samsung/b5q/proprietary/vendor/firmware/a740_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_sqe.fw \
+    vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b00 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b01 \
     vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b02 \
+    vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.elf \
     vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mbn \
     vendor/samsung/b5q/proprietary/vendor/firmware/a740_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mdt \
     vendor/samsung/b5q/proprietary/vendor/firmware/bt_nvm_loading.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading.xml \
