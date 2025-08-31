@@ -305,6 +305,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.bttpi-impl \
+    libPdSdCore \
     libTsAf_Q5B5Q \
     libTsAwbFront_B5 \
     libTsAwb_B5 \
@@ -321,6 +322,8 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libchifeature2 \
     libcom.qti.chinodeutils \
+    libdualcam_optical_zoom_control \
+    libdualcam_video_optical_zoom \
     libhypermotion_interface \
     libsehbluetooth_audio_session_aidl \
     libsoc_helper \
