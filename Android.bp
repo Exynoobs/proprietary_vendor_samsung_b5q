@@ -5570,6 +5570,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libautoframing_object_tracker.camera.samsung",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libautoframing_object_tracker.camera.samsung.so",
+            ],
+            shared_libs: [
+                "libOpenCv.camera.samsung",
+                "libc++",
+                "libz",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_qti",
     owner: "samsung",
     strip: {
