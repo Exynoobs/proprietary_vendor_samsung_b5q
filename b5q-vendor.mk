@@ -140,6 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/m3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/m3.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/qca6490/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/regdb.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/ss_dsi_panel_PBA_BOOTING_FHD_DSI1.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/ss_dsi_panel_PBA_BOOTING_FHD_DSI1.dat \
+    vendor/samsung/b5q/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3908_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_b5.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3908_b5_old.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_b5_old.bin \
     vendor/samsung/b5q/proprietary/vendor/firmware/tsp_synaptics/s3916a_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3916a_b5.bin \
