@@ -1,0 +1,22 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["519", "536"],
+    "ro.revision": ["3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+  },
+  "gpio_handle_0_platform":{
+    "owner": "gpio_handle",
+     ".gpio_handle":{
+      "owner": "gpio_handle",
+      ".config":{
+        "owner": "gpio_handle",
+        "interrupt_num":{ "type": "flt", "ver": "0",
+            "data": "67"
+        },
+        "gpio_delay":{ "type": "flt", "ver": "0",
+            "data": "50"
+        }
+      }
+    }
+  }
+}
