@@ -9,10 +9,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/acdb_cal.acdb \
     vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFileXml.qwsp \
     vendor/samsung/b5q/proprietary/vendor/etc/audio/sku_kalama/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths.xml \
-    vendor/samsung/b5q/proprietary/vendor/etc/devicestate/device_state_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/devicestate/device_state_configuration.xml \
     vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json \
     vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json \
-    vendor/samsung/b5q/proprietary/vendor/etc/displayconfig/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml \
     vendor/samsung/b5q/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/b5q/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/samsung/b5q/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
