@@ -332,6 +332,7 @@ PRODUCT_PACKAGES += \
     libTsAwb_B5 \
     lib_SamsungRec_07020 \
     lib_SoundAlive_play_plus_ver500 \
+    libagm \
     libar-pal \
     libautoframing_object_tracker.camera.samsung \
     libbluetooth_audio_session_aidl_qti \
