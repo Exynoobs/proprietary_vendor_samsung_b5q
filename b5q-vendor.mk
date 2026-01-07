@@ -346,8 +346,11 @@ PRODUCT_PACKAGES += \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libhypermotion_interface \
+    libqfp_sensortest \
     librecordalive \
     libsehbluetooth_audio_session_aidl \
+    libsfp_sensor \
+    libsfp_teegw \
     libsoc_helper \
     libthirdparty_zoomtranslator_imp \
     libtriplecam_image_optical_zoom \
