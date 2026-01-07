@@ -9,6 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/acdb_cal.acdb \
     vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFileXml.qwsp \
     vendor/samsung/b5q/proprietary/vendor/etc/audio/sku_kalama/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths.xml \
+    vendor/samsung/b5q/proprietary/vendor/etc/audio/sku_kalama/resourcemanager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager.xml \
     vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json \
     vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json \
     vendor/samsung/b5q/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
@@ -60,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/b5q/proprietary/vendor/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_transport_ppe.json \
     vendor/samsung/b5q/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/samsung/b5q/proprietary/vendor/etc/situation_audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/situation_audio_policy_volumes_sec.xml \
+    vendor/samsung/b5q/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/samsung/b5q/proprietary/vendor/firmware/B5_S6E3FAC_AMF670BS03.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/B5_S6E3FAC_AMF670BS03.dat \
     vendor/samsung/b5q/proprietary/vendor/firmware/B5_S6E3FC5_AMB338EH01.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/B5_S6E3FC5_AMB338EH01.dat \
     vendor/samsung/b5q/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
@@ -346,6 +348,7 @@ PRODUCT_PACKAGES += \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libhypermotion_interface \
+    libqc2audio_hwaudiocodec \
     libqfp_sensortest \
     librecordalive \
     libsehbluetooth_audio_session_aidl \
