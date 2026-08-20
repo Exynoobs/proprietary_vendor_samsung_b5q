@@ -6,10 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/b5q
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/acdb_cal.acdb \
-    vendor/samsung/b5q/proprietary/vendor/etc/audconf/OPEN/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFileXml.qwsp \
-    vendor/samsung/b5q/proprietary/vendor/etc/audio/sku_kalama/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths.xml \
-    vendor/samsung/b5q/proprietary/vendor/etc/audio/sku_kalama/resourcemanager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager.xml \
+    vendor/samsung/b5q/proprietary/vendor/etc/acdbdata/kalama_mtp/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_mtp/acdb_cal.acdb \
+    vendor/samsung/b5q/proprietary/vendor/etc/acdbdata/kalama_mtp/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_mtp/workspaceFileXml.qwsp \
     vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FAC_AMF670BS03.json \
     vendor/samsung/b5q/proprietary/vendor/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_B5_S6E3FC5_AMB338EH01.json \
     vendor/samsung/b5q/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
@@ -316,7 +314,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
-    audio.primary.kalama \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
@@ -332,8 +329,6 @@ PRODUCT_PACKAGES += \
     libTsAwb_B5 \
     lib_SamsungRec_07020 \
     lib_SoundAlive_play_plus_ver500 \
-    libagm \
-    libar-pal \
     libautoframing_object_tracker.camera.samsung \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
